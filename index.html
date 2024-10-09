@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Práctica</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi página</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca-de">Acerca de</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 id="tituloDOM">Manipulando el DOM</h2>
+        <p id="contenido">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sit voluptate ea omnis, commodi repellat, atque minima deserunt, natus distinctio ducimus soluta laudantium unde amet?
+            Necessitatibus veniam neque explicabo perspiciatis!</p>
+    </section>
+
+    <section>
+        <p id="p1">Párrafo1</p>
+        <p id="p2">Párrafo1</p>
+        <p id="p3">Párrafo1</p>
+    </section>
+
+    <section>
+        <p id="resultado">Fecha</p>
+        <button onmousedown="verFecha()" onmouseup="quitarFecha()">Fecha</button>
+    </section>
+
+    <section>
+        <label for="dato1">Conversión de temperatura</label>
+        <input type="text" name="dato1" id="dato1">
+        <br><br>
+        <p id="res">Resultados:</p>
+        <button onclick="temperatura()">Calcular</button>
+    </section>
+
+    <section class="editores">
+        <ul class="listaEditores">
+            <li class="lista">VisualStudio Code</li>
+            <li class="lista">Colab</li>
+            <li class="lista">Anaconda</li>
+        </ul>
+    </section>
+
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Esta es una página de ejemplo para practicar HTML.</p>
+    </section>
+
+    <section id="acerca-de">
+        <h2>Acerca de</h2>
+        <p>Soy un estudiante de desarrollo de software Full Stack en nivel básico.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 julupe - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
